@@ -37,6 +37,8 @@
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 15rem;
+      font-family: Poppins;
+      font-weight: 550;
 }
 
 .wrapper-style {
@@ -46,6 +48,15 @@
 .wrapper-style.title {
     background: black;
     color: azure;
+    font-family: Poppins;
+}
+
+.wrapper-style p {
+    color: azure;
+    padding: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: Poppins;
 }
 
 .title {
@@ -58,6 +69,7 @@
     text-transform: uppercase;
     display: block;
     font-weight: 700;
+    font-family: Poppins;
     letter-spacing: 0.25em;
     /*font-size: 0.9em;*/
     width: 25em;
@@ -67,6 +79,7 @@
     margin-bottom: -3.25em;
     margin-left: -12.5em;
     padding-top: 0.5em;
+    font-size: 2.5rem;
 }
 
 .title::before {
@@ -97,6 +110,26 @@
 .style1 h2 {
     text-align: center;
     color: azure;
+    font-size: 3.5rem;
+    padding-bottom: 20px;
+    font-family: Poppins;
+}
+
+.title2 h2 {
+    text-align: center;
+    color: azure;
+    font-size: 3rem;
+    padding: 20px;
+    font-family: Poppins;
+
+}
+
+.wrapper-style2 p {
+    color: azure;
+    padding: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: Poppins;
 }
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
@@ -105,6 +138,12 @@
     width: 15%;
     padding: 5px;
     text-align: center;
+  }
+
+  .column figcaption {
+    color: azure;
+    font-family: Poppins;
+    font-size: 2rem;
   }
   
   /* Clear floats after image containers */
@@ -368,7 +407,7 @@ footer .follow-us a svg {
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: Poppins;
     --main-hue: 208;
     --bg-color: #fff;
     --main-color: hsl(var(--main-hue), 92%, 54%);
