@@ -4,7 +4,7 @@
 }
 
 #header {
-    background-image: url(../images/house-1836070_1280.jpg);
+    background-image: url(../images/house.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -59,52 +59,8 @@
     font-family: Poppins;
 }
 
-.title {
-    background: #121212;
-    color: white;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    text-align: center;
-    text-transform: uppercase;
-    display: block;
-    font-weight: 700;
-    font-family: Poppins;
-    letter-spacing: 0.25em;
-    /*font-size: 0.9em;*/
-    width: 25em;
-    height: 3.25em;
-    top: -3.25em;
-    line-height: 3.25em;
-    margin-bottom: -3.25em;
-    margin-left: -12.5em;
-    padding-top: 0.5em;
-    font-size: 2.5rem;
-}
-
-.title::before {
-    content: '';
-    position: absolute;
-    bottom: -38px;
-    left: -35px;
-    width: 35px;
-    height: 38px;
-    background: url(../images/shadow.png);
-}
-
 *, *:before, *:after {
     box-sizing: inherit;
-}
-
-.title:after {
-    transform: scaleX(-1);
-    content: '';
-    position: absolute;
-    bottom: -38px;
-    right: -35px;
-    width: 35px;
-    height: 38px;
-    background: url(../images/shadow.png);
 }
 
 .style1 h2 {
@@ -359,19 +315,6 @@ textarea.contact-input ~ .icon {
     opacity: 0;
 }
 
-@media screen and (min-width: 62em) {
-    footer {
-        padding: 35px 0;
-    }
-
-    footer .footer-logo {
-        margin-right: 15px;
-    }
-
-    footer .footer.follow-us a {
-        padding: 0 0 55px;
-    }
-}
 
 footer {
     display: block;
@@ -418,4 +361,132 @@ body {
     --input-bg: hsla(var(--main-hue), 50%, 50%, 6.5%);
     --input-bg-hover: hsla(var(--main-hue), 50%, 50%, 14%);
     --input-text: #8c9aaf;
+}
+
+@media (max-width: 1000px) {
+    .logo {
+        margin-right: 1rem;
+    }
+    .logo img {
+        height: 30px;
+        margin-right: 0.7rem;
+    }
+
+    .contact-heading h1 {
+        font-size: 4.5rem;
+        margin-bottom: 1rem;
+        white-space: normal;
+    }
+
+    .text {
+        font-size: 0.9rem;
+    }
+
+    .contact-form {
+        display: grid;
+        margin-top: 1.9rem;
+        column-gap: 0.8rem;
+        row-gap: 0.65rem;
+    }
+
+    .contact-input {
+        border-radius: 17px;
+        font-size: 0.87rem;
+        padding: 1.5rem 1.2rem calc(0.75rem - 2px) 1.2rem;
+    }
+
+    .input-wrap label {
+        font-size: 0.91rem;
+        left: calc(1.2rem + 2px)
+    }
+
+    .input-wrap .icon {
+        font-size: 1.1rem;
+        right: calc(1.2rem + 2px);
+    }
+
+    textarea.contact-input ~ label {
+        top: 1.2rem;
+    }
+
+    textarea.contact-input ~ icon {
+        top: 1.2rem;
+    }
+
+    .input-wrap.focus .contact-input {
+        box-shadow: 0 0 0 3.5px var(--input-shadow);
+    }
+
+    .input-wrap.not-empty label {
+        font-size: 0.61rem;
+    }
+
+    .contact-buttons {
+        column-gap: 0.8rem;
+        margin-top: 0.45rem;
+    }
+
+    .btn {
+        padding: 1rem 1.5rem;
+        font-size: 0.87rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .left {
+        padding: 50px 1.5rem 0;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .form-wrapper {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+
+    .right {
+        display: none;
+    }
+
+}
+
+@media (max-width: 440px) {
+    .input-wrap {
+        grid-column: span 2;
+    }
+
+    .contact-buttons {
+        grid-template-columns: 1fr;
+        row-gap: 0.5rem;
+    }
+
+    .contact-heading h1 {
+        font-size: 1.9rem;
+        line-height: 1;
+    }
+
+    .logo img {
+        height: 25px;
+        margin-right: 0.7rem;
+    }
+
+
+}
+
+@media screen and (min-width: 62em) {
+    footer {
+        padding: 35px 0;
+    }
+
+    footer .footer-logo {
+        margin-right: 15px;
+    }
+
+    footer .footer.follow-us a {
+        padding: 0 0 55px;
+    }
 }
