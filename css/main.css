@@ -33,7 +33,7 @@
 .dark h1 {
       color: azure;
       position: absolute;
-      top: 65%;
+      top: 55%;
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 15rem;
@@ -41,19 +41,29 @@
       font-weight: 550;
 }
 
+.slogan p {
+    color: azure;
+    position: center;
+    padding-left: 18%;
+    font-size: 10rem;
+    font-family: Poppins;
+    font-weight: 550;
+}
+
 .wrapper-style {
     position: relative;
 }
 
-.wrapper-style.title {
-    background: black;
+.wrapper-style .title {
     color: azure;
+    text-align: center;
     font-family: Poppins;
+    font-size: 5rem;
 }
 
 .wrapper-style p {
     color: azure;
-    padding: 20px;
+    padding: 80px;
     text-align: center;
     font-size: 2.5rem;
     font-family: Poppins;
@@ -364,6 +374,19 @@ body {
 }
 
 @media (max-width: 1000px) {
+
+    .dark h1 {
+        font-size: 10rem;
+    }
+
+    .slogan p {
+        font-size: 8rem;
+    }
+
+    .column {
+        width: 50%;
+    }
+
     .logo {
         margin-right: 1rem;
     }
@@ -433,6 +456,11 @@ body {
 }
 
 @media (max-width: 650px) {
+
+    .dark h1 {
+        font-size: 8rem;
+    }
+
     .left {
         padding: 50px 1.5rem 0;
         grid-template-columns: 1fr;
